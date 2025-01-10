@@ -1,0 +1,151 @@
+
+    body{
+      background:  #F1FAEE;
+    }
+    .container{
+      display: grid;
+      grid-template-areas: 
+      "header header"
+      "menu menu"
+      "sidebar content"
+      "footer footer"
+      ;
+      grid-template-columns:1fr 3fr;
+      grid-template-rows: auto auto 1fr  auto;
+      gap: 10px;
+      height: 100vh;
+    }
+    
+    .header{
+      grid-area: header;
+      background:  #264653;
+      text-align: center;
+      padding: 20px;
+      color:  #F1FAEE;
+      font-size: 1.5em;
+      position: sticky;
+      top: 0;
+    }
+    .menu{
+      background: #1abc93;
+      text-align:center;
+      grid-area: menu;
+      padding: 10px;
+    }
+    .sidebar{
+      grid-area: sidebar;
+      background: #F4A261;
+      text-align: center;
+      padding: 20px;
+    }
+    .content{
+      text-align: center;
+      background:  #E9C46A;
+      grid-area: content;
+      padding: 20px;
+      overflow-y: scroll;
+    }
+    .footer{
+      grid-area: footer;
+      text-align: center;
+      background: #264653;
+      padding: 10px;
+    }
+    
+    
+    .header h1{
+      font-size: 2.5em;
+      margin: 0;
+    }
+    .header p{
+      margin: 10px 0 0;
+      font-size: 1.2em;
+    }
+    .menu nav{
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .menu a{
+      text-decoration: none;
+      color:  #F1FAEE;
+      transition: background-color 0.2s ease;
+      padding: 5px 10px;
+      font-weight: bold;
+    }
+    .menu a:hover{
+      background-color: #F4A261;
+      border-radius: 5px;
+    }
+    .sidebar ul{
+      list-style-type: none;
+      padding: 0;
+    }
+    .sidebar h2{
+      margin: 0 0 10px;
+    }
+    .sidebar li{
+      margin-bottom: 10px;
+      overflow-y: scroll;
+    }
+    .sidebar a{
+      text-decoration: none;
+      color: #1a3c5a;
+      font-weight: bold;
+    }
+    .sidebar a:hover{
+      text-decoration: underline;
+    }
+    .content h2{
+      margin: 0 0 10px;
+    }
+    .content p{
+      line-height: 1.6;
+      margin: 0 0 20px;
+    }
+    .footer p{
+      font-size: 0.9em;
+      margin: 0;
+      color: #F1FAEE;
+    }
+    /*Responsiveness*/
+    @media (max-width: 768px){
+      .container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "menu"
+        "content"
+        "sidebar"
+        "footer"
+        ;
+        grid-template-rows: auto auto 1fr auto auto;
+      }
+      .menu a{
+        display: block;
+        text-align: center;
+      }
+      .menu nav{
+        flex-direction: column;
+        gap: 10px;
+      }
+      .sidebar ul{
+        padding-left: 10px;
+      }
+    }
+  
+  .cta-btn{
+    background: #264653;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .cta-btn{
+    background-color: #1a3c5a;
+  }
+  .cta-btn a{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
