@@ -1,0 +1,22 @@
+.blog-content {
+  padding: 20px;
+  background-color: #F1FAEE;
+  color: #264653;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.blog-content h1 {
+  color: #2A9D8F;
+  font-size: 28px;
+}
+
+.blog-content h2 {
+  color: #F4A261;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.blog-content p {
+  margin-bottom: 15px;
+}
