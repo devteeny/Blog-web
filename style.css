@@ -1,6 +1,7 @@
 
     body{
       background:  #F1FAEE;
+      font-family: Sans-Serif;
     }
     .container{
       display: grid;
@@ -50,6 +51,7 @@
       text-align: center;
       background: #264653;
       padding: 10px;
+    
     }
     
     
@@ -86,7 +88,6 @@
     }
     .sidebar li{
       margin-bottom: 10px;
-      overflow-y: scroll;
     }
     .sidebar a{
       text-decoration: none;
@@ -107,6 +108,7 @@
       font-size: 0.9em;
       margin: 0;
       color: #F1FAEE;
+      font-weight: bold;
     }
     /*Responsiveness*/
     @media (max-width: 768px){
@@ -148,4 +150,5 @@
     color: white;
     font-weight: bold;
     font-size: 20px;
+    text-decoration:none;
   }
